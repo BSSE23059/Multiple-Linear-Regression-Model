@@ -19,7 +19,7 @@ Where:
 - $\beta_i$: Coefficients for each feature
 - $\epsilon$: Error term
 
-The coefficients \(\beta\) are calculated using the **Normal Equation**:
+The coefficients $`\beta`$ are calculated using the **Normal Equation**:
 $`
 \beta = (X^T X)^{-1} X^T Y
 `$
