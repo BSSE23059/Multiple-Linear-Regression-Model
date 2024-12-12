@@ -1,6 +1,4 @@
 # Multiple-Linear-Regression-Model
-Building Linear Regression class model for Multiple Linear Regression.
-# Multiple Linear Regression from Scratch
 
 This project implements a **Multiple Linear Regression** model from scratch in Python. It provides methods to fit the model to training data and make predictions on test data. The implementation highlights the mathematical foundations of regression and supports multiple input features.
 
@@ -22,9 +20,9 @@ Where:
 - $\epsilon$: Error term
 
 The coefficients \(\beta\) are calculated using the **Normal Equation**:
-\[
+$`
 \beta = (X^T X)^{-1} X^T Y
-\]
+`$
 
 ---
 
@@ -54,15 +52,15 @@ class MultipleLinearRegression:
 
 ### 2. **Fit Method**
 The `fit` method trains the model by calculating the coefficients and intercept using the **Normal Equation**:
-\[
+$`
 \beta = (X^T X)^{-1} X^T Y
-\]
+`$
 
 Steps:
-1. **Augment the Features**: Adds a column of ones to \(X\) to account for the intercept \(\beta_0\).
+1. **Augment the Features**: Adds a column of ones to $\X$ to account for the intercept $\beta_0$.
 2. **Compute Betas**:
-   - Calculate \((X^T X)^{-1}\).
-   - Multiply it by \(X^T Y\) to find the coefficients.
+   - Calculate $`(X^T X)^{-1}`$.
+   - Multiply it by $\X^T Y$ to find the coefficients.
 
 ```python
 def fit(self, x_train, y_train_):
@@ -78,12 +76,12 @@ def fit(self, x_train, y_train_):
 
 ### 3. **Predict Method**
 The `predict` method uses the learned coefficients to make predictions:
-\[
+$`
 Y_{\text{pred}} = X \cdot \beta + \beta_0
-\]
+`$
 
 Steps:
-1. Multiply the feature matrix \(X\) by the coefficients.
+1. Multiply the feature matrix $\X$ by the coefficients.
 2. Add the intercept term to calculate predictions.
 
 ```python
@@ -127,27 +125,27 @@ print("Predictions:", y_pred)
 ### 1. **Normal Equation**
 
 The coefficients are calculated as:
-\[
+$`
 \beta = (X^T X)^{-1} X^T Y
-\]
+`$
 
-- \(X^T X\): Dot product of the transposed feature matrix and the feature matrix.
-- \((X^T X)^{-1}\): Inverse of the resulting matrix.
-- \(X^T Y\): Dot product of the transposed feature matrix and the target vector.
+- $`X^T X`$: Dot product of the transposed feature matrix and the feature matrix.
+- $`(X^T X)^{-1}`$: Inverse of the resulting matrix.
+- $`X^T Y`$: Dot product of the transposed feature matrix and the target vector.
 
 ### 2. **Prediction Formula**
 
 Predictions are made using:
-\[
+$`
 Y_{\text{pred}} = X \cdot \beta + \beta_0
-\]
+`$
 
 ---
 
 ## Limitations
 
 1. **Singular Matrix Error**:
-   - If \(X^T X\) is singular (non-invertible), the model will fail. This can happen due to:
+   - If $`X^T X`$ is singular (non-invertible), the model will fail. This can happen due to:
      - Redundant features.
      - Insufficient data.
 
