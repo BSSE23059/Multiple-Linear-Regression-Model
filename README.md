@@ -57,10 +57,10 @@ $`
 `$
 
 Steps:
-1. **Augment the Features**: Adds a column of ones to $\X$ to account for the intercept $\beta_0$.
+1. **Augment the Features**: Adds a column of ones to $`X`$ to account for the intercept $\beta_0$.
 2. **Compute Betas**:
    - Calculate $`(X^T X)^{-1}`$.
-   - Multiply it by $\X^T Y$ to find the coefficients.
+   - Multiply it by $`X^T Y`$ to find the coefficients.
 
 ```python
 def fit(self, x_train, y_train_):
