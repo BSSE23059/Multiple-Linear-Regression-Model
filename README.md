@@ -81,7 +81,7 @@ Y_{\text{pred}} = X \cdot \beta + \beta_0
 `$
 
 Steps:
-1. Multiply the feature matrix $\X$ by the coefficients.
+1. Multiply the feature matrix $`X`$ by the coefficients.
 2. Add the intercept term to calculate predictions.
 
 ```python
