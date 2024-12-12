@@ -11,15 +11,15 @@ This project implements a **Multiple Linear Regression** model from scratch in P
 ### What is Multiple Linear Regression?
 
 Multiple Linear Regression models the relationship between a dependent variable \(Y\) and multiple independent variables \(X_1, X_2, \dots, X_n\):
-$'
+$
 Y = \beta_0 + \beta_1X_1 + \beta_2X_2 + \dots + \beta_nX_n + \epsilon
-'$
+$
 Where:
-- \(Y\): Dependent variable (target)
-- \(X_i\): Independent variables (features)
-- \(\beta_0\): Intercept
-- \(\beta_i\): Coefficients for each feature
-- \(\epsilon\): Error term
+- $Y$: Dependent variable (target)
+- $X_i$: Independent variables (features)
+- $beta_0$: Intercept
+- $beta_i$: Coefficients for each feature
+- $epsilon$: Error term
 
 The coefficients \(\beta\) are calculated using the **Normal Equation**:
 \[
