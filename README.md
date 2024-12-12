@@ -17,9 +17,9 @@ $
 Where:
 - $Y$: Dependent variable (target)
 - $X_i$: Independent variables (features)
-- $beta_0$: Intercept
-- $beta_i$: Coefficients for each feature
-- $epsilon$: Error term
+- $\beta_0$: Intercept
+- $\beta_i$: Coefficients for each feature
+- $\epsilon$: Error term
 
 The coefficients \(\beta\) are calculated using the **Normal Equation**:
 \[
